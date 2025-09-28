@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+.btndiv {
+    text-align: center;
+    margin: 1%;
+}
+#myBtn {
+    background-color: transparent;
+    font-size: large;
+}
+#myBtn:hover {
+    background-color: rgb(221, 221, 221);
+    font-size: large;
+}

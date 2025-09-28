@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+        }
+        .btndiv {
+            text-align: center;
+            margin: 1%;
+        }
+        #myBtn {
+            background-color: transparent;
+            font-size: large;
+        }
+        #myBtn:hover {
+            background-color: rgb(221, 221, 221);
+            font-size: large;
+        }
+    </style>
+    <title>Rice Roller</title>
+  </head>
+  <body>    
+    <div>
+        <img id="myImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Dice-0.svg/512px-Dice-0.svg.png?20231029123836">
+    </div>
+    <div class="btndiv">    
+        <button id="myBtn">Roll</button>
+    </div>
+    <script>
+        const img = document.getElementById("myImg");
+        const btn = document.getElementById("myBtn");
+
+        btn.addEventListener("click", () => {
+            rand = Math.floor(Math.random() * 6 + 1);
+            switch (rand){
+                case 1:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/512px-Dice-1-b.svg.png?20231029222439"
+                    break;
+                case 2:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/512px-Dice-2-b.svg.png?20231029222526"
+                    break;
+                case 3:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dice-3-b.svg/512px-Dice-3-b.svg.png?20231029222626"
+                    break;
+                case 4:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Dice-4-b.svg/512px-Dice-4-b.svg.png?20231029222734"
+                    break;
+                case 5:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dice-5-b.svg/512px-Dice-5-b.svg.png?20231029222800"
+                    break;
+                case 6:
+                    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dice-6a-b.svg/512px-Dice-6a-b.svg.png?20231029222844"
+                    break;
+            }
+        });
+    </script>
+  </body>
+</html>
